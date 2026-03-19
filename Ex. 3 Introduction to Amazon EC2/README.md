@@ -2,9 +2,9 @@
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
+* **Name**: Vedhavalli S________________________________
+* **Register Number**: 212223090029_____________________
+* **Date of Submission**: 19/03/26__________________
 
 ---
 
@@ -98,11 +98,46 @@ Terminate the EC2 instance after completing the experiment to avoid unnecessary 
 
 (Write the steps you followed in your own words)
 
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
+1. I allowed HTTP access on Port 80 from anywhere (0.0.0.0/0).
+
+I reviewed all the configurations and clicked on “Launch Instance.”
+First, I logged in to the AWS Management Console using my AWS account.
+
+I searched for EC2 in the services section and opened the EC2 Dashboard.
+
+I explored different sections like Instances, AMIs, Instance Types, Key Pairs, Security Groups, and Elastic IPs to understand their functions.
+
+I clicked on the “Launch Instance” button to create a new EC2 instance.
+
+I selected Amazon Linux 2 AMI as the operating system.
+
+I chose the t2.micro instance type because it is eligible for the AWS Free Tier.
+
+I entered a name for my instance to identify it easily.
+
+I created a new key pair, selected the PEM format, and downloaded it to my system.
+
+I configured the security group settings.
+I copied the public IP address of the instance from the EC2 dashboard.
+
+I opened the terminal and navigated to the folder where the key pair file was saved.
+
+I connected to the instance using the SSH command:
+ssh -i "keyname.pem" ec2-user@<Public-IP>
+
+I successfully logged in to the Amazon Linux server.
+
+I went back to the EC2 console and selected the instance.
+
+I clicked on “Stop” and observed the instance state changing to “Stopped.”
+
+I clicked on “Start” and observed the state changing back to “Running.”
+
+I also performed the “Reboot” operation and noticed that the instance restarted.
+
+I opened the “Monitoring” tab to check CPU utilization and network metrics.
+---
+
 
 ---
 
@@ -110,19 +145,23 @@ Terminate the EC2 instance after completing the experiment to avoid unnecessary 
 
 ### Screenshot 1: EC2 Dashboard / Instance List
 
-(Insert Screenshot Here)
+<img width="793" height="773" alt="image" src="https://github.com/user-attachments/assets/703cfe64-fed0-47dd-8ab9-9f0c7001db5c" />
 
 ---
 
 ### Screenshot 2: SSH Connection to Instance
 
-(Insert Screenshot Here)
+<img width="1067" height="1021" alt="Screenshot 2026-02-27 134044" src="https://github.com/user-attachments/assets/015e4c71-f6a1-4f2e-a6f1-b143090ae282" />
+<img width="1055" height="1036" alt="Screenshot 2026-02-27 134647" src="https://github.com/user-attachments/assets/1963642c-2b48-493a-9b61-bea787cf95aa" />
+
 
 ---
 
 ### Screenshot 3: Instance Monitoring / Status
+<img width="840" height="805" alt="image" src="https://github.com/user-attachments/assets/d83cab52-c65e-42c7-8bfc-6cb3c25664d5" />
+<img width="838" height="799" alt="image" src="https://github.com/user-attachments/assets/e4c7c3c7-6ca5-4ad5-ae30-2f0a1de49b7e" />
 
-(Insert Screenshot Here)
+
 
 ---
 
